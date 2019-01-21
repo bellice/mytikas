@@ -73,3 +73,47 @@ Promise.all([
 	console.log(data[0][0]);
 	console.log(data[1][0]);
 });
+
+
+var data = [10, 20, 30, 40, 50];
+// Select all existing circles and bind data to it
+var circles = d3.selectAll("circle")
+  .data(data);
+ 
+// Update existing circles
+circles.attr("fill", "red");
+ 
+// Remove surplus circles
+circles.exit().remove();
+ 
+// Add new circles and then create a new selection
+// merging the new and the existing circles and then
+// update the merged selection
+circles.enter()
+  .append("circle")
+  .merge(circles)
+  .attr("fill", "green");
+  //circles are present in the memory
+  //see the nodes in the console
+
+
+  //while binding data, it may happen that there are
+  //surplus/less number of entries on either set. 3 scenarios :
+
+  //SCENARIO 1:
+  //number of dom elemetns are less than the number of
+  //data points in the data set.
+  //=>We need to add the missing elements to the DOM
+  //=> ENTER set
+
+  //SCENARIO 2:
+  //number of dom elements are more than the number of
+  //data points in the data set
+  //=>We need to remove the surplus DOM elements
+  //=>EXIT set
+
+  //SCENARIO 3:
+  //number of som elements are sames as tue number of
+  //data points in the data set
+  //=>We neet to update for data value changes
+  //=>UPDATE SET
