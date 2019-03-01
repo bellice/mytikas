@@ -11,7 +11,10 @@ body{
 }
 
 .c-svg{
-    max-height:974px;
+    max-height:638px;
+    min-height:452px;
+    min-width: 360px;
+    max-width: 1600px;
     height: 90vh;
     width: 90vw;
     border: solid 1px;
