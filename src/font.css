@@ -1,0 +1,17 @@
+/* Webfont: Montserrat-SemiBold */@font-face {
+    font-family: "MontserratSemiBold";
+	src: url("../font/Montserrat-SemiBold.woff2") format("woff2"), /* Modern Browsers */
+         url("../font/Montserrat-SemiBold.woff") format("woff"); /* Modern Browsers */
+    font-style: normal;
+	font-weight: normal;
+    
+}
+
+/* Webfont: Work-Sans */@font-face {
+    font-family: "WorkSans";
+	src: url("../font/WorkSans-Regular.woff2") format("woff2"), /* Modern Browsers */
+         url("../font/WorkSans-Regular.woff") format("woff"); /* Modern Browsers */
+    font-style: normal;
+	font-weight: normal;
+    
+}

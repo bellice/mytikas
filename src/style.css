@@ -5,6 +5,8 @@
 body{
     background-color: #282420;
     color: #f8e7df;
+    font-family: "WorkSans";
+    font-style: normal;
 }
 
 .c{
@@ -21,6 +23,7 @@ a{
     color: rgb(245, 111, 111);
     cursor:pointer;
     outline: 0;
+    font-size: 1.2em;
 }
 
 a:hover{
@@ -51,7 +54,16 @@ input{
     padding-bottom:.5em;
 }
 
+h1{
+    font-family: "MontserratSemiBold";
+    font-style: normal;
+    font-size: 2.5em;
+}
 
+p{
+    font-size: 1.2em;
+    line-height: 1.25em;
+}
 
 /*--------------------------------------------------*/
 /*VIZ*/
