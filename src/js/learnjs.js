@@ -373,3 +373,24 @@ let expenses = [{"name":"jim","amount":34,"date":"11/12/2015"},
   {"name":"stacy","amount":34.10,"date":"01/04/2016"},
   {"name":"stacy","amount":44.80,"date":"01/05/2016"}
 ];
+
+
+
+
+
+
+
+
+
+
+
+let array1 = ["x0","x1","x2","x3", "x4", "x5"];
+let array2 = ["y0","y1","y2", "y3", "y4", "y5"];
+
+//concat() method is used to merge two or more array
+//apply() method calls a function with a given this value and arguments provided as an array
+console.log(
+	[].concat.apply([], array1.map(function(el, i){return [el].concat(array2.slice(i, i+1));}))
+);
+const xArray = data.map((d)=>{ return d.value1; });
+const yArray = data.map((d)=>{ return d.value2; });

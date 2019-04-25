@@ -1,0 +1,110 @@
+/*--------------------------------------------------*/
+/*VIZ*/
+/*--------------------------------------------------*/
+
+.c-svg{
+    max-height:638px;
+    min-height:452px;
+    min-width: 360px;
+    max-width: 1600px;
+    height: 90vh;
+    width: 90vw;
+    border: solid 1px;
+    position: relative;
+}
+
+.button a{
+    padding:.5em;
+    border-radius:50%;
+    border: solid 1px;
+    border-color:#f8e7df;
+}
+
+.c-viz{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#button-return{
+    align-self: flex-end;
+    margin-bottom:1em;
+}
+
+
+/*--------------------------------------------------*/
+/*POPUP*/
+/*--------------------------------------------------*/
+
+.popup {
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity:0;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 #282828;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 1px #000;
+    color: #f8e7df;
+    font: 10px sans-serif;
+    padding: 5px;
+    pointer-events: none;
+    font-size: 0.9em;
+    z-index:1;
+  }
+
+
+/*--------------------------------------------------*/
+/*CONTROL BUTTON*/
+/*--------------------------------------------------*/
+
+  .c-button-map{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top:.5em;
+    right:0;
+  }
+
+  .map-control a, .map-search a{
+    border: 1px solid;
+    padding: .5em 1em;
+    background-color:#282420;
+}
+
+.map-control-click, .map-search-click{
+    display: none;
+}
+
+
+.map-control-click{
+    background-color:#282420;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width:20em;
+    right:0;
+    top:2.5em;
+    padding:.5em;
+}
+
+.map-search-click{
+    position: absolute;
+    right:0;
+    margin-right:5.5em;
+}
+
+#text-search{
+    color:#fff;
+    background-color:#282420;
+}
+ 

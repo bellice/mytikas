@@ -6,39 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mytikas</title>
 
-    <link rel="stylesheet" type="text/css" href="src/my_style.css">
-
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/font.css">
+<!--
+    <link rel="preload" href="font/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="font/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="font/WorkSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+-->
   </head>
 
   <body>
 
-<a href="voronoi.html">Voronoi interaction</a>
-<p>Bonjour, ici c'est Paris, bonjour</p>
-<p>
-  <strong>Ecran mobile</strong>
-  <br>
-  Hauteur maximale : 974px
-  <br>
-  Hauteur visible 638px
-  <br>
+    <div class="c">
+      <div class="spec">
+        <h1>Spécifications</h1>
+        <p>
+          <strong>Ecran mobile</strong>
+          <br>
+          Hauteur maximale : 974px
+          <br>
+          Hauteur visible 638px
+          <br>
 
-  <strong>Ordinateur bureau</strong>
-  <br>
-  Hauteur maximale : 559px
-  <br>
-  Hauteur visible 452px
-  <br>
+          <strong>Ordinateur bureau</strong>
+          <br>
+          Hauteur maximale : 559px
+          <br>
+          Hauteur visible 452px
+          <br>
+        </p>
+      </div>
 
-</p>
+      <div class="list-viz">
 
+        <h1>Prototypage de visualisation</h1>
 
+        <div class="list-viz-a">
+          <div><a href="viz-scatterplot-01.html">Nuage de points quanti/quanti</a></div>
+          <div><a href="viz-map-01.html">Carte</a></div>
+        </div>
+      </div>
 
+     </div>
 
-    <script type="text/javascript" src="lib/d3.min.js" ></script>
-    <script type="text/javascript" src="lib/topojson.min.js" ></script>
-    <script type="text/javascript" src="lib/lodash.min.js" ></script>
-    <script type="text/javascript" src="src/main.js" async></script>
-    <script type="text/javascript" src="src/learnjs.js" async></script>
+    <script src="lib/d3.min.js" ></script>
+    <script src="lib/topojson.min.js" ></script>
+    <script src="lib/lodash.min.js" ></script>
+    <!--<script src="src/learnjs.js" async></script>-->
 
   </body>
 
