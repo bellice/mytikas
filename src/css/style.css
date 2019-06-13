@@ -5,7 +5,8 @@
 body{
     background-color: #282420;
     color: #f8e7df;
-    font-family: "WorkSans";
+    font-family: "Jost";
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -55,7 +56,8 @@ input{
 }
 
 h1{
-    font-family: "MontserratSemiBold";
+    font-family: "Jost";
+    font-weight: 800;
     font-style: normal;
     font-size: 2.5em;
 }
